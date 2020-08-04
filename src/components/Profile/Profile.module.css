@@ -1,8 +1,3 @@
-.content {
-	grid-area: c;
-	margin: 5px 0 5px 0;
-}
-
 .coverImg img {
 	width: 100%;
 	height: 200px;
@@ -16,4 +11,3 @@
 .userInfo img {
 	width: 200px;
 }
-
