@@ -12,3 +12,8 @@
 	text-decoration: none;
 	color: black;
 }
+
+.navItem a.active {
+	text-decoration: none;
+	color: #dd4b39;
+}
