@@ -1,3 +1,11 @@
+.postsBlock{
+	margin: 5px;
+}
+
 .posts {
-	margin-top: 10px;
+	
+}
+
+.addPost {
+	margin-bottom: 10px;
 }
