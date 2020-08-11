@@ -1,7 +1,13 @@
-.post{
+.post {
 	margin-bottom: 20px;
 }
 
-.post img{
+.postContent {
+	display: flex;
+	align-items: center;
+}
+
+.post img {
 	width: 50px;
+	margin: 5px;
 }

@@ -1,2 +1,21 @@
-.dialog {
+.dialog{
+  display: flex;
+  align-items: center;
 }
+
+.dialog a{
+  text-decoration: none;
+  color: black;
+}
+
+.dialog img{
+  width: 50px;
+  margin: 5px;
+}
+
+.dialog a.active {
+	text-decoration: none;
+	color: #dd4b39;
+}
+
+

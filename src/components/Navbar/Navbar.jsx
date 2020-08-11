@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
 	return (
 		<nav className={classes.nav}>
 			<div className={classes.navItem}>
@@ -19,6 +19,10 @@ const Navbar = () => {
 			</div>
 			<div className={classes.navItem}>
 				<NavLink to="/settings" activeClassName={classes.active}>Settings</NavLink>
+			</div>
+			<div className={classes.friends}>
+			<img src="" alt="avatar"/>
+			<span></span>
 			</div>
 		</nav>
 	);
