@@ -17,3 +17,12 @@
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+.addMessage {
+	margin-top: 30px;
+}
+
+.dFlex{
+	display: flex;
+	flex-direction: column;
+}

@@ -32,16 +32,19 @@ const Dialogs = (props) => {
 	return (
 		<div className={classes.dialogs}>
 			<div className={classes.dialogItems}>{dialogElements}</div>
-			<div className={classes.messages}>{messageElements}</div>
-			<div className="addMessage">
-				<div>
-					<textarea
-						onChange={onMessageChange}
-						value={props.dialogsPage.newMessageText}
-					></textarea>
-				</div>
-				<div>
-					<button onClick={addMessage}>Add message</button>
+			<div className={classes.messages+ " "+ classes.dFlex}>
+				{messageElements}
+				<div className={classes.addMessage}>
+					<div>
+						<textarea
+							placeholder="Enter your message"
+							onChange={onMessageChange}
+							value={props.dialogsPage.newMessageText}
+						></textarea>
+					</div>
+					<div>
+						<button onClick={addMessage}>Add message</button>
+					</div>
 				</div>
 			</div>
 		</div>
