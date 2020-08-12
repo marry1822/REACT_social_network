@@ -5,7 +5,7 @@ import Message from "./Message/Message";
 import {
 	addMessageActionCreator,
 	updateNewMessageTextActionCreator,
-} from "../../redux/state";
+} from "../../redux/dialogsReducer";
 
 const Dialogs = (props) => {
 	let dialogElements = props.dialogsPage.dialogs.map((dialog) => (
@@ -32,7 +32,7 @@ const Dialogs = (props) => {
 	return (
 		<div className={classes.dialogs}>
 			<div className={classes.dialogItems}>{dialogElements}</div>
-			<div className={classes.messages+ " "+ classes.dFlex}>
+			<div className={classes.messages + " " + classes.dFlex}>
 				{messageElements}
 				<div className={classes.addMessage}>
 					<div>
