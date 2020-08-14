@@ -11,6 +11,7 @@ const Dialogs = (props) => {
 			name={dialog.name}
 			id={dialog.id}
 			avatarSrc={dialog.avatarSrc}
+			key={dialog.id}
 		/>
 	));
 
@@ -24,7 +25,7 @@ const Dialogs = (props) => {
 	};
 
 	let messageElements = state.messages.map((message) => (
-		<Message message={message.message} />
+		<Message message={message.message} key={message.id} />
 	));
 
 	return (
