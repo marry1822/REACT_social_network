@@ -1,45 +1,45 @@
 .user {
-  display: grid;
-  grid-template-columns: 2fr 8fr;
-  margin-top: 10px;
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+	margin-top: 10px;
 }
 
-.userAvatar{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+.userAvatar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
 }
 
 .userAvatar img {
 	width: 100px;
 }
 
-.userInfo{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  padding: 10px;
-  border: black 1px solid;
-  border-radius: 20px;
+.userInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	padding: 10px;
+	border: black 1px solid;
+	border-radius: 20px;
 }
 
-.fullName{
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 50px;
+.fullName {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 50px;
 }
 
-.status{
-  font-style: italic;
+.status {
+	font-style: italic;
 }
 
-.location{
-  font-size: 12px;
+.location {
+	font-size: 12px;
 }
 
-.selectedPage{
-  font-weight: bold;
-  cursor: pointer;
+.selectedPage {
+	font-weight: bold;
+	cursor: pointer;
 }
