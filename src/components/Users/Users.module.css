@@ -38,3 +38,8 @@
 .location{
   font-size: 12px;
 }
+
+.selectedPage{
+  font-weight: bold;
+  cursor: pointer;
+}
