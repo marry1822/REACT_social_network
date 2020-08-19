@@ -5,9 +5,49 @@
 
 .userInfo {
 	margin-top: 10px;
-	padding: 5px;
+	display: flex;
 }
 
 .userInfo img {
 	width: 200px;
+	height: 200px;
+	margin-right: 30px;
+}
+
+.fullName {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.aboutMe {
+	margin-bottom: 10px;
+}
+
+.aboutMe span {
+	font-weight: bold;
+}
+
+.contacts span {
+	font-weight: bold;
+}
+
+.contacts a {
+	margin-bottom: 5px;
+	text-decoration: none;
+	color: black;
+}
+
+.contactItems {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+}
+
+.jobItems{
+	margin-bottom: 10px;
+}
+
+.job span{
+	font-weight: bold;
 }
