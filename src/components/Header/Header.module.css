@@ -19,7 +19,11 @@
 	text-decoration: none;
 }
 
-.authInfo{
+.loginInfo {
 	display: flex;
 	flex-direction: row;
+}
+
+.loginInfo img {
+	margin-left: 10px;
 }
