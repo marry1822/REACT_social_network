@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./ProfileInfo.module.css";
 import Preloader from "../../common/preloader/Preloader";
+import ProfileStatus from "./ProfileStatus";
 
 const ProfileInfo = (props) => {
 	if (!props.profile) {
@@ -8,14 +9,17 @@ const ProfileInfo = (props) => {
 	}
 	return (
 		<div>
-			<div className={classes.coverImg}>
+			{/* <div className={classes.coverImg}>
 				<img
 					src="https://img.glyphs.co/img?src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL0Jvb2stY292ZXItZGVzaWduLXR1dG9yaWFsLWFuZC1mcmVlLXRlbXBsYXRlcy9wb3N0LWhlYWRlci5qcGc_bXRpbWU9MjAxODAzMTUyMjI4NTk&q=85&enlarge=true&h=215&w=570"
 					alt="profile cover"
 				/>
-			</div>
+			</div> */}
+
 			<div className={classes.userInfo}>
 				<img src={props.profile.photos.small} alt="avatar" />
+				<ProfileStatus status={"Hello"} />
+
 				<div>
 					<div className={classes.fullName}>{props.profile.fullName}</div>
 					<div className={classes.aboutMe}>
