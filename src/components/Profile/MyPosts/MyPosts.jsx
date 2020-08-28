@@ -17,7 +17,7 @@ const ProfileAddNewPostForm = (props) => {
 				name={"newPostText"}
 				component={Textarea}
 				validate={[required, maxLength10]}
-				placeholder={'lalala'}
+				placeholder={"lalala"}
 			/>
 			<div>
 				<button>Add post</button>
@@ -30,7 +30,7 @@ const ProfileAddNewPostFormRedux = reduxForm({
 	form: "addNewPost",
 })(ProfileAddNewPostForm);
 
-const MyPosts = (props) => {
+const MyPosts = React.memo((props) => {
 	let postElements = props.posts.map((post) => (
 		<Post message={post.message} likeCounts={post.likeCounts} key={post.id} />
 	));
@@ -48,6 +48,6 @@ const MyPosts = (props) => {
 			<div className={classes.posts}>{postElements}</div>
 		</div>
 	);
-};
+});
 
 export default MyPosts;
