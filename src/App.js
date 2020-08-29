@@ -11,37 +11,52 @@ import { initializeApp } from "../src/redux/appReducer";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import Preloader from "./components/common/preloader/Preloader";
+import store from "./redux/reduxStore";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
 
 class App extends React.Component {
-  componentDidMount() {
-    this.props.initializeApp();
-  }
+	componentDidMount() {
+		this.props.initializeApp();
+	}
 
-  render() {
-    if (!this.props.initialized) {
-      return <Preloader />;
-    }
+	render() {
+		if (!this.props.initialized) {
+			return <Preloader />;
+		}
 
-    return (
-      <div className="app-wrapper">
-        <HeaderContainer />
-        <Navbar />
-        <div className="app-wrapper-content">
-          <Route path="/profile/:userId?" render={() => <ProfileContainer />} />
-          <Route path="/dialogs" render={() => <DialogsContainer />} />
-          <Route path="/users" render={() => <UsersContainer />} />
-          <Route path="/login" render={() => <LoginPage />} />
-        </div>
-      </div>
-    );
-  }
+		return (
+			<div className="app-wrapper">
+				<HeaderContainer />
+				<Navbar />
+				<div className="app-wrapper-content">
+					<Route path="/profile/:userId?" render={() => <ProfileContainer />} />
+					<Route path="/dialogs" render={() => <DialogsContainer />} />
+					<Route path="/users" render={() => <UsersContainer />} />
+					<Route path="/login" render={() => <LoginPage />} />
+				</div>
+			</div>
+		);
+	}
 }
 
 const mapStateToProps = (state) => ({
-  initialized: state.app.initialized,
+	initialized: state.app.initialized,
 });
 
-export default compose(
-  withRouter,
-  connect(mapStateToProps, { initializeApp })
+let AppContainer = compose(
+	withRouter,
+	connect(mapStateToProps, { initializeApp })
 )(App);
+
+const MainApp = (props) => {
+	return (
+		<BrowserRouter>
+			<Provider store={store}>
+				<AppContainer />
+			</Provider>
+		</BrowserRouter>
+	);
+};
+
+export default MainApp;
