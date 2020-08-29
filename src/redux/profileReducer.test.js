@@ -10,7 +10,7 @@ let state = {
 
 test("posts' length should be incremented", () => {
 	// 2. Action
-	let action = addPostActionCreator("Masha");
+	let action = addPostActionCreator("NewPost");
 
 	let newState = profileReducer(state, action);
 
@@ -18,14 +18,14 @@ test("posts' length should be incremented", () => {
 	expect(newState.posts.length).toBe(3);
 });
 
-test("the message of the new post should be Masha ", () => {
+test("the message of the new post should be NewPost ", () => {
 	// 2. Action
-	let action = addPostActionCreator("Masha");
+	let action = addPostActionCreator("NewPost");
 
 	let newState = profileReducer(state, action);
 
 	// 3. Expectation
-	expect(newState.posts[2].message).toBe("Masha");
+	expect(newState.posts[2].message).toBe("NewPost");
 });
 
 
