@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Header.module.css";
 import { NavLink } from "react-router-dom";
-import "../../assets/images/user.png";
+import userPhoto from "../../assets/images/user.svg";
 const Header = (props) => {
 	return (
 		<header className={classes.header}>
@@ -19,7 +19,7 @@ const Header = (props) => {
 							className={classes.userImage}
 								src={
 									props.userImg ||
-									"https://fotograf-kuchin.ru/wp-content/uploads/2017/06/people.png"
+									userPhoto
 								}
 							/>
 						</div>
