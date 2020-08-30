@@ -1,4 +1,13 @@
 .selectedPage {
 	font-weight: bold;
 	cursor: pointer;
+	margin: 5px;
+}
+
+.page {
+	margin: 5px;
+}
+
+.paginator{
+align-self: center;
 }

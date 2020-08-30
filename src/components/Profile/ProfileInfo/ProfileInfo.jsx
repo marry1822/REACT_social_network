@@ -8,12 +8,14 @@ const ProfileInfo = ({ profile, status, updateStatus }) => {
 		return <Preloader />;
 	}
 	return (
-		<div>
-			<div className={classes.userInfo}>
+		<div className={classes.profileInfo}>
+			<div className={classes.avatar}>
 				<img src={profile.photos.small} alt="avatar" />
-				<ProfileStatusWithHooks status={status} updateStatus={updateStatus} />
+			</div>
+			<div className={classes.userInfo}>
 				<div>
 					<div className={classes.fullName}>{profile.fullName}</div>
+					<ProfileStatusWithHooks status={status} updateStatus={updateStatus} />
 					<div className={classes.aboutMe}>
 						<span>About me:</span> {profile.aboutMe}
 					</div>

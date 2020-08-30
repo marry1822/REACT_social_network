@@ -5,6 +5,8 @@
 .postContent {
 	display: flex;
 	align-items: center;
+	background-color: #fff;
+	border-radius: 20px;
 }
 
 .post img {

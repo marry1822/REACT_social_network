@@ -1,9 +1,10 @@
-.postsBlock{
-	margin: 5px;
-}
-
-.posts {
-	
+.postsBlock {
+	margin-top: 30px;
+	margin-left: 260px;
+	background: rgb(221, 75, 57, 0.06);
+	width: 60%;
+	padding: 20px;
+	border-radius: 20px;
 }
 
 .addPost {

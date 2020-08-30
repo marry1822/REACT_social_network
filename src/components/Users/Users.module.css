@@ -39,3 +39,10 @@
 	font-size: 12px;
 }
 
+.mainContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+

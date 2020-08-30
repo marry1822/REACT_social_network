@@ -11,7 +11,7 @@ const TOGGLE_IS_FOLLOWING_IN_PROGRESS = "TOGGLE_IS_FOLLOWING_IN_PROGRESS";
 
 let initialState = {
 	users: [],
-	pageSize: 100,
+	pageSize: 10,
 	totalUsersCount: 0,
 	currentPage: 1,
 	isFetching: true,
@@ -29,13 +29,16 @@ const usersReducer = (state = initialState, action) => {
 				// 	}
 				// 	return user;
 				// }),
-				users: updateObjectInArray(state.users,action.userId,'id',{followed: true})
+				users: updateObjectInArray(state.users, action.userId, "id", {
+					followed: true,
+				}),
 			};
 		case UNFOLLOW:
 			return {
 				...state,
-				users: updateObjectInArray(state.users,action.userId,'id',{followed: false})
-
+				users: updateObjectInArray(state.users, action.userId, "id", {
+					followed: false,
+				}),
 			};
 		case SET_USERS:
 			return {
@@ -64,7 +67,6 @@ const usersReducer = (state = initialState, action) => {
 					? [...state.followingInProgress, action.userId]
 					: state.followingInProgress.filter((id) => id !== action.userId),
 			};
-
 		default:
 			return state;
 	}

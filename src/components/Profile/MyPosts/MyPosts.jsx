@@ -17,7 +17,7 @@ const ProfileAddNewPostForm = (props) => {
 				name={"newPostText"}
 				component={Textarea}
 				validate={[required, maxLength10]}
-				placeholder={"lalala"}
+				placeholder={"Enter your post"}
 			/>
 			<div>
 				<button>Add post</button>

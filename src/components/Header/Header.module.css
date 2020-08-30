@@ -6,12 +6,24 @@
 	justify-content: space-between;
 }
 
-.header img {
-	width: 50px;
+.logo {
+	width: 60px;
+}
+
+.login{
+	color: white;
+	font-weight: bold;
+}
+.userImage {
+	width: 40px;
 }
 
 .loginBlock {
 	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 .loginBlock a {
@@ -21,9 +33,16 @@
 
 .loginInfo {
 	display: flex;
-	flex-direction: row;
+	align-items: center;
 }
 
 .loginInfo img {
 	margin-left: 10px;
+}
+
+.logoutBtn {
+	background: #fff;
+	border: none;
+	border-radius: 20px;
+	width: 50px;
 }

@@ -2,6 +2,8 @@
 	grid-area: n;
 	background-color: #fff;
 	padding: 5px;
+	border-radius: 20px;
+	margin-top: 10px;
 }
 
 .navItem{
@@ -18,6 +20,3 @@
 	color: #dd4b39;
 }
 
-.friends{
-	
-}

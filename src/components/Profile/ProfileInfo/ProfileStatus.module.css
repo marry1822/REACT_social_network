@@ -1,0 +1,9 @@
+.status{
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.line{
+	border-bottom: 1px solid rgb(221, 75, 57, .2);
+	margin-top: 10px;
+}
